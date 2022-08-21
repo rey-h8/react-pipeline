@@ -6,7 +6,7 @@ import { Page2 } from './component/Page2';
 import { Page3 } from './component/Page3';
 
 const App = () => (
-  <BrowserRouter>
+  <BrowserRouter basename="/react-pipeline">
     <CustomLayout>
       <Routes>
         <Route path="/landing" element={<Landing />} />
