@@ -7,6 +7,7 @@ module.exports = {
   extends: [
     'eslint:recommended',
     'plugin:react/recommended',
+    'plugin:react/jsx-runtime',
     // 'airbnb',
     // 'airbnb-typescript',
     'prettier',
@@ -29,6 +30,8 @@ module.exports = {
     'no-unused-vars': 'off',
     '@typescript-eslint/no-unused-vars': ['error'],
     // React and JSX
+    'react/jsx-uses-react': 'error',
+    'react/jsx-uses-vars': 'error',
     'react/jsx-filename-extension': [1, { extensions: ['.tsx'] }],
     'react/jsx-one-expression-per-line': 'off',
     'react/function-component-definition': [
