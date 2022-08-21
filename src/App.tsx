@@ -9,10 +9,10 @@ const App = () => (
   <BrowserRouter>
     <CustomLayout>
       <Routes>
-        <Route path='/landing' element={<Landing />} />
-        <Route path='/page2' element={<Page2 />} />
-        <Route path='/page3' element={<Page3 />} />
-        <Route path='*' element={<Navigate to='/landing' replace />} />
+        <Route path="/landing" element={<Landing />} />
+        <Route path="/page2" element={<Page2 />} />
+        <Route path="/page3" element={<Page3 />} />
+        <Route path="*" element={<Navigate to="/landing" replace />} />
       </Routes>
     </CustomLayout>
   </BrowserRouter>
