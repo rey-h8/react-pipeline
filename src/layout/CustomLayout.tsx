@@ -1,4 +1,4 @@
-import React from 'react';
+import { Component } from 'react';
 import Layout from 'antd/lib/layout';
 import PageHeader from 'antd/lib/page-header';
 import { Link, useNavigate } from 'react-router-dom';
@@ -34,7 +34,7 @@ interface ILayoutProps {
 }
 
 // eslint-disable-next-line react/prefer-stateless-function
-class CustomLayout extends React.Component<ILayoutProps> {
+class CustomLayout extends Component<ILayoutProps> {
   render() {
     const { children } = this.props;
 

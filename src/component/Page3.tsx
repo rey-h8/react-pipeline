@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 const Page3 = () => {
   const [someState] = useState(3);
