@@ -8,8 +8,8 @@ module.exports = {
     'eslint:recommended',
     'plugin:react/recommended',
     'plugin:react/jsx-runtime',
-    // 'airbnb',
-    // 'airbnb-typescript',
+    'plugin:react-hooks/recommended',
+    'plugin:import/recommended',
     'prettier',
   ],
   parser: '@typescript-eslint/parser',
@@ -62,10 +62,10 @@ module.exports = {
     'linebreak-style': 'off',
     // Import related
     'import/prefer-default-export': 'off',
-    'import/no-default-export': 'error',
+    'import/no-default-export': 'off',
     'react/require-default-props': 'off',
     'import/extensions': [
-      'error',
+      'off',
       'ignorePackages',
       {
         js: 'never',
