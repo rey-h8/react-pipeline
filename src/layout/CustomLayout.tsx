@@ -9,28 +9,24 @@ const CustomHeader = () => {
   const navigate = useNavigate();
   return (
     <PageHeader
-      className="site-page-header h-full"
-      title={<Link to="/">React Pipeline</Link>}
-      subTitle="SPA using React + TS + Vite + Tailwind"
+      className='site-page-header h-full'
+      title={<Link to='/'>React Pipeline</Link>}
+      subTitle='SPA using React + TS + Vite + Tailwind'
       onBack={() => navigate(-1)}
       extra={
         <>
-          <Link to="/page2">Page 2</Link>
-          <Link to="/page3">Page 3</Link>
+          <Link to='/page2'>Page 2</Link>
+          <Link to='/page3'>Page 3</Link>
         </>
-  }
+      }
     />
   );
 };
 
-const CustomFooter = () => (
-  <div className="text-center">
-    &copy; Maifee Ul Asad
-  </div>
-);
+const CustomFooter = () => <div className='text-center'>&copy; Maifee Ul Asad</div>;
 
 interface ILayoutProps {
-  children: any
+  children: any;
 }
 
 // eslint-disable-next-line react/prefer-stateless-function
@@ -43,9 +39,7 @@ class CustomLayout extends Component<ILayoutProps> {
         <Header style={{ backgroundColor: 'white' }}>
           <CustomHeader />
         </Header>
-        <Content>
-          {children}
-        </Content>
+        <Content>{children}</Content>
         <Footer style={{ backgroundColor: 'white' }}>
           <CustomFooter />
         </Footer>
