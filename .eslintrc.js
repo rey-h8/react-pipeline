@@ -3,6 +3,7 @@ module.exports = {
     browser: true,
     commonjs: true,
     es2021: true,
+    jest: true,
   },
   extends: [
     'eslint:recommended',
@@ -13,7 +14,7 @@ module.exports = {
     'plugin:jsx-a11y/recommended',
     'plugin:import/errors',
     'plugin:import/warnings',
-    // 'plugin:import/typescript',
+    'plugin:import/typescript',
     'prettier',
   ],
   parser: '@typescript-eslint/parser',
