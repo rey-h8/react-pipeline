@@ -5,9 +5,11 @@ module.exports = {
     es2021: true,
   },
   extends: [
+    'eslint:recommended',
     'plugin:react/recommended',
-    'airbnb',
-    'airbnb-typescript',
+    // 'airbnb',
+    // 'airbnb-typescript',
+    'prettier',
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
@@ -17,10 +19,7 @@ module.exports = {
     ecmaVersion: 'latest',
     project: './tsconfig.json',
   },
-  plugins: [
-    'react',
-    '@typescript-eslint',
-  ],
+  plugins: ['react', '@typescript-eslint'],
   rules: {
     // General
     'no-use-before-define': 'off',
@@ -32,7 +31,13 @@ module.exports = {
     // React and JSX
     'react/jsx-filename-extension': [1, { extensions: ['.tsx'] }],
     'react/jsx-one-expression-per-line': 'off',
-    'react/function-component-definition': [2, { namedComponents: 'arrow-function', unnamedComponents: 'arrow-function' }],
+    'react/function-component-definition': [
+      2,
+      {
+        namedComponents: 'arrow-function',
+        unnamedComponents: 'arrow-function',
+      },
+    ],
     // Code styling related
     'react/jsx-curly-newline': 'off',
     'object-curly-newline': 'off',
